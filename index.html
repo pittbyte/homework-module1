@@ -1,50 +1,216 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <title>Great Cliff's of California</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<title>Title Here</title>
-<meta charset="utf-8">
+<!--Embed Style Method-->
+<style>
+/*Header*/
+    header {
+        width: 100%;
+        min-height: 400px;
+        padding-top: 3em;
+        background: no-repeat lightgrey url(image/cliff_ocean.jpg);
+        background-size: 1500px;
+        
+    }
+    /*Navigation*/
+    .nav-container {
+        position: absolute;
+        top:20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    /*Main Header*/
+    .main-header {
+        background-color: rgb(255, 255, 255, 0.8);
+        width: 700px;
+        margin: 2em auto 0 auto;
+        min-height: 100px;
+        height: 100px;
+    }
+    .main-header .logo img {
+        width: 100px;
+        height: 100px;
+        margin: 0 2em 0 0;
+        float: left;
+    }
+    /*Main Menu*/
+    .main-menu {
+        margin-left: 227px;
+        font-weight: 400px;
+    }
+    .main-menu ul li {
+        list-style-type: none;
+        display: inline-block;
+        float: left;
+        padding-left: 25px;
+        padding-right:25px;
+        border-left: 1px solid rgba(202, 204, 202, 0.6);
+        line-height: 100px;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    .main-menu ul li a {
+        text-decoration: none;
+        color: #888;
+    
+    }
+    .main-menu ul li a:hover {
+        color: #9ed034
+    }
+    .main-menu ul li.active {
+        background: #9ed034;
+        border:none;
+    }
+    .main-menu ul li.active a {
+        color: #fff;
+    }
+    /*Main*/
+    main h2 {
+        color: #9ed034;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /*Partners*/
+    section {
+        width: 100%;
+        background-color: #4288c3;
+    }
+    /* center icon and logo*/
+    section #partner { 
+        width: 1200px;
+        padding: 2em 0 2 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    /*icon circular shape*/
+    section #partner .partner { 
+        display: inline-block;
+        margin: 0 0.75em;
+        padding: 1.3em 1.5em;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    /*scale icons*/
+    section #partner .partner img {
+        width: 90px;
+        height: 90px;
+    }
+    /*Footer*/
+    footer {
+        width: 100%;
+        height: 155px;
+        padding-bottom: 1em;
+        background-color: #ecfab8;
+    }
+    footer #nondisclaimer  {
+        padding: 3.5em 3.5em 3.5em 13em;
+        float: left;
+        font-size: 0.9em;
+    }
+    footer .social {
+        text-align: right;
+    }
+    footer .social img {
+        padding: 2.5em;
+        margin-right: 9.25em;
+        float: right;
+        text-align: right;
+    }
+    footer #disclaimer {
+        clear: both;
+    }
+    footer #disclaimer p {
+        font-size: 0.85em;
+        text-align: center;
+    }
+    footer #nondisclaimer .social .fa {
+        padding: 15px;
+        font-size: 15px;
+        width: 15px;
+        text-align: center;
+        text-decoration: none;
+        margin: 0 4px;
+        border-radius: 50%;
+    
+    }
+    footer #nondisclaimer .social .fa:hover {
+        opacity: 0.7;
+    }
+    footer #nondisclaimer .social .fa-facebook {
+        background: #3b5998;
+        color: #fff;
+    }
+   footer #nondisclaimer .social .fa-twitter {
+        background: #55acee;
+        color: #fff;
+    }
 
+   footer #nondisclaimer .social .fa-instagram {
+        background: #125688;
+        color: #fff;
+        
+    }
+
+</style>
 
 </head>
-<body>
-
-    <div id="container"></div>    
+<body id="home">
+    <!--Container-->
+    <div id="container"></div> 
+   
     <header> 
-        <img src="\Image\cliff_ocean.jpg" alt="Ocean View Cliff" width="1280" height="564"></img>
-        <div class="main header"></div>
-        <div class="logo"></div>
-        <img src="\Image\logo.png" alt="Great Cliff's Logo" width="125" height="358"></img>
-    
+        
+<img src="Image\cliff_ocean.jpg" alt="Ocean View Cliff" width="1280" height="564">
+<div class="nav-container">
+    <div class="main-header">
+        <div class="logo">
+            <img src="Image\logo.png" alt="Great Cliff's Logo" width="125" height="100">
+        </div>
+          
+        
+
+        
+            
+        
+<!--Begining Navigation-->
     <nav class="main-menu">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li>Cliffs</li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-        
+<!--End Navigation-->
     </header>
-    <main><h2>Main content Heading</h2>
-          <p>Main content paragraph</p>
-          <h3>Subheading 1.</h3>
-          <p>Content for subheading 2.</p>
+<!--Main Begin-->
+    <main><h2>Introducing California's Greatest Cliff's </h2>
+          <h3>What is so unique about California cliffs?</h3>
+          <p>California cliffs are one of a kind in the United States where no cliffs are as magnificent and beautiful as them. And California is the only state that have cliffs that fronts all possible environments: sea, river, mountains and canyons. There are four such individual unique cliffs: West Cliff, North Cliff, East Cliff and South Cliff. All offer fantastic overlooking views, recreational areas, camping sites, wildlife watch spots and overnight cabins.
+
+        </p>
+          <h3>Where are these cliffs?</h3>
+          <p>Located within 100 miles radius from Irvine , California, they can be reached by roads easily. The closets cliff to Irivine is West Cliff, which is the most popular and most visited.</p>
 
           <section>
             <ul id="partner">
-                <li class="partner"><h3>Partner 1 Image</h3></li>
-                <li class="partner"><h3>Partner 2 Image</h3></li>
-                <li class="partner"><h3>Partner 3 Image</h3></li>
-                <li class="partner"><h3>Partner 4 Image</h3></li>
-                <li class="partner"><h3>Partner 5 Image</h3></li>
-                <li class="partner"><h3>Partner 6 Image</h3></li>
-
-
-
-
-
+                    <li class="partner">
+                        <img src="Image/partners/partner-bustour.png" alt="Partner Bus Tour"></li>
+                    <li class="partner">
+                        <img src="Image/partners/partner-cabinrental.png" alt="Partner Cabin Rental"></li>
+                    <li class="partner">
+                        <img src="Image/partners/partner-campingadv.png" alt="Partner Camping Adventure"></li>
+                    <li class="partner">
+                        <img src="Image/partners/partner-collegetours.png" alt="Partner College Tours"></li>
+                    <li class="partner">
+                        <img src="Image/partners/partner-rentalbike.png" alt="Partner Rental Bike"></li>
+                    <li class="partner">
+                        <img src="Image/partners/partner-tourgroup.png" alt="Partner Tour Group"></li>
             </ul>
-            
+
             
             
         
@@ -55,15 +221,18 @@
     
     
     </main>
+<!--main End-->
     <footer>
         <div id="nondisclaimer"></div>
         <div class="copy">&copy; 2020 GreatCliffs.com</div>
         <div class="social">
-            <h3></h3>
+            <a href="#" class="fa fa-facebook">
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>   
         </div>
 
         <div id="disclaimer">
-            <p></p>
+            <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
         </div>
     </footer>
 </body>
@@ -73,3 +242,5 @@
 
 
 </html>
+
+  
