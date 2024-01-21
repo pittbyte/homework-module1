@@ -17,7 +17,8 @@ header {
     display: flex;
     align-items: center;
     background-color: #fff;
-    justify-content: center;
+    justify-content:space-between;
+    padding: 10px;
 }
 
 #Activities .logo {
@@ -28,10 +29,10 @@ header {
     width: 100px;
     height: 100px;
     margin: 0;
+    
 }
 
 #Activities .main-menu {
-    margin-left: 20px; /* Adjust margin as needed */
     font-weight: 400px;
     display: flex;
     align-items: center;
@@ -47,7 +48,7 @@ header {
 
 #Activities .main-menu ul li {
     padding-left: 25px;
-    padding-right: 25px;
+    padding-right: 55px;
     line-height: 100px;
     text-transform: uppercase;
     font-size: 14px;
@@ -62,11 +63,29 @@ header {
 #Activities .main-menu ul li a:hover {
     color: #9ed034;
 }
+
 #Contact header {
     background: no-repeat lightgray url(image/cliff_rock.jpg);
     background-size: 1500px;
 }
-
+.contact-partner {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .contact-partner .partner {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  /* Style partner images on the contact page */
+  .contact-partner .partner img {
+    width: 100px; 
+    height: auto; 
+  }
+  
+  
 /*Navigation*/
  .nav-container  {
     position: absolute;
@@ -203,4 +222,54 @@ footer #nondisclaimer .social .fa-instagram {
     background: #125688;
     color: #fff;
     
+}
+table {
+    width: 100px;
+    margin: 4em auto 0 auto;
+}
+.activities-table {
+    width: 80%;
+    margin: 20px auto; /* Add spacing outside the table */
+    border-collapse: collapse;
+  }
+  /* Style the table caption */
+.activities-table caption {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: #852b1b;
+    height: 40px;
+    color: #fff;
+    padding-top: 1em;
+
+  }
+  
+  /* Style table headers */
+.activities-table th {
+    background-color: #bde1ff; /* Add background color to header cells */
+    padding: 10px;
+  }
+  
+ 
+tbody {
+    background: #eeffe6;
+    text-align:center;
+}
+th,td {
+    width: 225px;
+    height: 75px;
+    vertical-align: middle;
+    border: solid 1px #852b1b;
+}
+th:first-child {
+    width: 125px;
+    height: 50px;
+    background: #4977d1;
+    color: #fff;
+}
+td:first-child {
+    font-weight: bold;
+    background: #bde1ff;
+
+
 }
