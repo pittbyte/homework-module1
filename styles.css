@@ -376,11 +376,67 @@ p {
 #image-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 10px;
     margin-top: 20px; /* Adjust the margin as needed */
+    background: #fff;
+  
+
 }
 
+#image-grid .image,
+#image-grid .image1,
+#image-grid .image2,
+#image-grid .image3 {
+    background-color: white; /* Set the background color to white */
+    padding: 50px; /* Optional: Add padding for spacing around the images */
+    margin: 10 auto;
+    
+}
+
+
 #image-grid img {
-    width: 100%;
+    width: 80%;
     height: auto;
+    display: block; /* Remove any default spacing issues */
+    padding-left: 10px;
+}
+#image-grid .image::before {
+    content: attr(data-label); /* Use the 'data-label' attribute content as the label text */
+    display: inline-block;
+    text-align: center;
+    background-color: #852b1b; /* Change this to the desired background color */
+    color: #fff; /* Set text color */
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 75%;
+}
+#image-grid .image1::before {
+    content: attr(data-label); /* Use the 'data-label' attribute content as the label text */
+    display: inline-block;
+    text-align: center;
+    background-color: #852b1b; /* Change this to the desired background color */
+    color: #fff; /* Set text color */
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 75%;
+}
+#image-grid .image2::before {
+    content: attr(data-label); /* Use the 'data-label' attribute content as the label text */
+    display: inline-block;
+    text-align: center;
+    background-color: #852b1b; /* Change this to the desired background color */
+    color: #fff; /* Set text color */
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 75%;
+}
+#image-grid .image3::before {
+    content: attr(data-label); /* Use the 'data-label' attribute content as the label text */
+    display: inline-block;
+    text-align: center;
+    background-color: #852b1b; /* Change this to the desired background color */
+    color: #fff; /* Set text color */
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 75%;
 }
