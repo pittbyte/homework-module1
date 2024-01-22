@@ -7,6 +7,7 @@ header {
     background-size: 1500px;
     
 }
+
 #Home header {
     background: no-repeat lightgray url(image/cliff_ocean.jpg);
     background-size: 1500px;
@@ -20,7 +21,6 @@ header {
     justify-content:space-between;
     padding: 10px;
 }
-
 #Activities .logo {
     flex: 1;
 }
@@ -74,18 +74,106 @@ header {
     margin: 20px 0;
   }
   
-  .contact-partner .partner {
+.contact-partner .partner {
     display: inline-block;
     margin-right: 20px;
   }
   
   /* Style partner images on the contact page */
-  .contact-partner .partner img {
+.contact-partner .partner img {
     width: 100px; 
     height: auto; 
   }
   
-  
+
+h1 {
+    color: #9ed034;
+    font-size: 38px;
+    
+ }
+ 
+ #contact-info {
+    background-color: transparent; 
+    padding: 20px; 
+}
+/*Contact form*/
+#contact-form {
+    background-color: #fff; 
+    padding: 20px; 
+   
+    
+    
+}
+
+#contact-form fieldset {
+    border:2px solid #9ed034;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form textarea,
+#contact-form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd; /* Border for textboxes */
+    border-radius: 4px; 
+}
+
+#contact-form input[type="submit"] {
+    background-color: #4977d1; 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+    
+#contact-form .commentbox {
+    margin-bottom: 20px; 
+    width: 50%;
+    
+}
+
+#contact-form .commentbox label {
+    display: block;
+    margin-bottom: 8px;
+    
+}
+
+#contact-form .commentbox textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 100px; 
+}
+#contact-form .button {
+    text-align: right;
+}
+
+#contact-form .button input[type="submit"] {
+    float: right;
+    
+}
+#contact-form .radios,
+#contactform .selectmenu {
+    margin-bottom: 20px;
+}
+
+#contact-form select {
+    width: 10%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff; /* Set background color to white */
+    color: #333; /* Set text color */
+}
 /*Navigation*/
  .nav-container  {
     position: absolute;
@@ -171,7 +259,7 @@ section #partner .partner img {
 /*Footer*/
 footer {
     width: 100%;
-    height: 155px;
+    height: 85px;
     padding-bottom: 1em;
     background-color: #ecfab8;
 }
@@ -272,4 +360,8 @@ td:first-child {
     background: #bde1ff;
 
 
+}
+/* Styles for checked radio buttons */
+#contact-form input[type="radio"]:checked {
+    accent-color: blue;
 }
