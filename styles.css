@@ -365,3 +365,22 @@ td:first-child {
 #contact-form input[type="radio"]:checked {
     accent-color: blue;
 }
+/*line break*/
+.special {
+    white-space: pre-line;
+}
+p {
+    margin-bottom: 20px; 
+}
+
+#image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+#image-grid img {
+    width: 100%;
+    height: auto;
+}
