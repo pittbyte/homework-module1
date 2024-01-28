@@ -45,9 +45,10 @@
             <p class="special">The greatest cliffs are these four cliffs located in southern California. Each of these cliffs have their own uniqueness and beauty: West Cliff, North Cliff, East Cliff and South Cliff are the pride of California. Each cliff has many amenities to offer visitors such as recreational areas, camping sites, wildlife watch spots and overnight cabins.</p>
            
             <p>No matter which direction you head from Irvine, California, the sites are easily reached within a 100 mile radius. West Cliff is the most popular among Westcliff University campus students because of its close proximity.</p>
-
+            <ul id="album">
             
             <section id="image-grid">
+                
                 <div class="image" data-label="West Cliff">
                     <img src="Image/cliff-west-sea.jpg" alt="Overhead Sea View">
                 </div>
@@ -110,6 +111,31 @@
             <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
         </div>
     </footer>
+    <!-- Dynamic image generation script -->
+    <script>
+        var images = [
+            { name: "cliff-west-sea", label: "West Cliff", alt: "Overhead Sea View" },
+            { name: "cliff-north-mountain", label: "North Cliff", alt: "Edge of the Cliff" },
+            { name: "cliff-east-river", label: "East Cliff", alt: "Cliff Water View" },
+            { name: "cliff-south-canyon", label: "South Cliff", alt: "Trees and Cliffs" }
+        ];
+    
+        var imageList = [];
+        var openDiv = "<div class='image' data-label='";
+        var closeDiv = "'>";
+        var imageContent = "<img src='Image/";
+    
+        for (var i = 0; i < images.length; i++) {
+            var image = images[i];
+            var closeDivImage = "' alt='" + image.alt + "'>" +
+                "</div>";
+    
+            var imageElement = openDiv + image.label + closeDiv + imageContent + image.name + ".jpg" + closeDivImage;
+            imageList.push(imageElement);
+        }
+    
+        document.getElementById("image-grid").innerHTML = imageList.join(" ");
+    </script>
 </body>
 
 
