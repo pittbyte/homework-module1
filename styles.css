@@ -12,6 +12,20 @@ header {
     background: no-repeat lightgray url(image/cliff_ocean.jpg);
     background-size: 1500px;
 }
+#home {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    color: #3a3a3a;
+    background: linear-gradient(0deg, rgba(251, 215, 139, 1) 0%, rgba(118, 213, 245, 1) 100%);
+}
+
+/* Additional Styles for Specific Elements Within the Home Area */
+#home h1 {
+    color: #125688;
+}
+
+#home p {
+    /* Additional paragraph styles if needed */
+}
 #Activities header {
     background: no-repeat lightgray url(image/runfly.jpg);
     background-size: 1500px;
@@ -243,13 +257,14 @@ section #partner {
     margin: 0 auto;
     text-align: center;
 }
-/*icon circular shape*/
-section #partner .partner { 
+/* Icon circular shape */
+section #partner .partner {
     display: inline-block;
     margin: 0 0.75em;
     padding: 1.3em 1.5em;
     background-color: #fff;
     border-radius: 50%;
+    overflow: hidden; /* Ensure the content doesn't extend beyond the circle */
 }
 /*scale icons*/
 section #partner .partner img {

@@ -6,34 +6,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 
-    <style>
-        /* Add styles for the clock container */
-        #clock-container {
-            background: linear-gradient(to right, #00b4db, #0083B0);
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            font-size: 24px;
-            margin-top: 20px;
-        }
-    </style>
+    
 </head>
 <body id="home">
     <!--Container-->
     <div id="container"></div> 
    
     <header> 
-        <section id="timeofday">
-            <span> Your Current Local Time: </span>
-            <span id="clock"></span>        
-
-        </section>
-<img src="Image\cliff_ocean.jpg" alt="Ocean View Cliff" width="1280" height="564">
-<div class="nav-container">
-    <div class="main-header">
-        <div class="logo">
-            <img src="Image\logo.png" alt="Great Cliff's Logo" width="125" height="100">
-        </div>
+        
+        <img src="Image\cliff_ocean.jpg" alt="Ocean View Cliff" width="1280" height="564">
+        <div class="nav-container">
+            <div class="main-header">
+                <div class="logo">
+                    <img src="Image\logo.png" alt="Great Cliff's Logo" width="125" height="100">
+                </div>
           
               
             
@@ -49,9 +35,19 @@
     </ul>
 </nav>
 <!--End Navigation-->
-    </header>
+    </div>
+</div>
+</header>
+    <section id="timeofday">
+        <span> Your Current Local Time: </span>
+        <span id="clock"></span>
+        <span id="timezone">Time Zone: <span id="timezone-value"></span></span>
+    </section>
 <!--Main Begin-->
-    <main><h2>Introducing California's Greatest Cliff's </h2>
+    <main>
+       
+
+        <h2>Introducing California's Greatest Cliff's </h2>
           <h3>What is so unique about California cliffs?</h3>
           <p>California cliffs are one of a kind in the United States where no cliffs are as magnificent and beautiful as them. And California is the only state that have cliffs that fronts all possible environments: sea, river, mountains and canyons. There are four such individual unique cliffs: West Cliff, North Cliff, East Cliff and South Cliff. All offer fantastic overlooking views, recreational areas, camping sites, wildlife watch spots and overnight cabins.
 
@@ -59,12 +55,8 @@
           <h3>Where are these cliffs?</h3>
           <p>Located within 100 miles radius from Irvine , California, they can be reached by roads easily. The closets cliff to Irivine is West Cliff, which is the most popular and most visited.</p>
 
-
- <!-- Clock Container -->
-            <div id="clock-label">Your current local time:</div>
-            <div id="clock-container"></div>
-
-          <section>
+            
+            
             <ul id="partner">
                     <li class="partner">
                         <img src="Image/partners/partner-bustour.png" alt="Partner Bus Tour"></li>
@@ -85,15 +77,14 @@
         
 
 
-          </section>
+          
     
     
     
     </main>
 <!--main End-->
 
-</body>
-</html>
+
     <footer>
         <div id="nondisclaimer"></div>
         <div class="copy">&copy; 2020 GreatCliffs.com</div>
@@ -108,37 +99,67 @@
         </div>
     </footer>
     <!-- JavaScript Time Function -->
-   <script>
-    function currentTime() {
-         var d = new Date(); //Get current time
-         var hr = d.getHours(); //Get current hours
-         var min = d.getMinutes(); //Get current mins
-         var sec = d.getSeconds(); //Get current seconds
-         var ampm; //declare empty variable to store Am or PM
-    }
-//Add 0 to sigle digits for seconds
-if (sec < 10) {
-    sec = "0" + sec;
+    <script>
+        function currentTime() {
+            var d = new Date(); // Get current time
+            var hr = d.getHours(); // Get current hours
+            var min = d.getMinutes(); // Get current mins
+            var sec = d.getSeconds(); // Get current seconds
+            var ampm; // declare empty variable to store Am or PM
+    
+            // Add 0 to single digits for seconds
+            if (sec < 10) {
+                sec = "0" + sec;
+            }
+    
+            // Add 0 to single digits for minutes
+            if (min < 10) {
+                min = "0" + min;
+            }
+    
+            // Determine AM or PM
+            if (hr == 12) {
+                ampm = "PM"; // Set to PM
+            } else if (hr > 12) {
+                hr -= 12; // Deduct 12 from hours greater than 12 (Military time)
+                ampm = "PM"; // Set to PM     
+            } else {
+                ampm = "AM"; // Set to AM
+            }
+    
+            // Assemble time format to display
+            var time = hr + ":" + min + ":" + sec + " " + ampm;
+    
+            // Display current local time and time zone on HTML elements
+            document.getElementById("clock").innerText = time; // adding time
 
-}
-//Add 0 to sigle digits for mintes
-if (min < 10) {
-    min = "0";
-}
-//Determine Am or PM
-if (hr == 12) {
-    ampm = "PM"; // Set to PM
-} else if (hr> 12) {
-    hr-= 12; // Dedict 12 from hours greater than 12 ( Militarty time)
-   ampm ="PM"; //set to PM     
-}else {
-    ampm ="AM"; //Set to AM
-}
-//Assemble time format to display
-var time = hr +":" + min + ":" + sec + " " + ampm;
-//Display current local time and time zone on HTML elements
-document.getElementById("clock").innerText = time; //adding time
+            //display timezone
+            var timezoneValue = getTimezone();
+            document.getElementById("timezone-value").innerText = timezoneValue;
 
+            var utchr = d.getUTCHours(); // Get current Greenwich mean time (GMT)
+            var timeDiff; // to store time difference between GMT hour and local hour
+            var adjTimeDiff; // to store difference converted to a positive number
+            var timeZone; // to store 4 time zones (PM, MT, CT, ET)
+        }
+            
+        function getTimezone() {
+            var timezoneOffset = new Date().getTimezoneOffset();
+            var timezoneHours = Math.abs(timezoneOffset) / 60;
+            var timezoneValue = timezoneOffset >= 0 ? "GMT - " : "GMT + ";
+            timezoneValue += timezoneHours;
+            return timezoneValue;
+        }
+
+           
+    // Initial run of time data function
+            // Run time data function every 1 second
+            setInterval(currentTime, 1000); // setting timer
+        // Initial run of time data function
+        currentTime();
+
+       
+    </script>
 </body>
 </html>
 
