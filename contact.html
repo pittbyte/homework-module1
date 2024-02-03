@@ -5,6 +5,10 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    <!--Digital Clock-->
+    <script src="js/digclock.js"></script>
+    <!--Partners-->
+    <script src="js/site_scripts.js"></script>
 
 
 </head>
@@ -92,16 +96,32 @@
         <label>How did you hear about us:</label>  
         <textarea></textarea>
     </div>
-
+    <!--Random code-->
+    <div class="randomcode">
+        <input type="text" name="randomcode" placeholder="Enter characters">
+        <p id="codes"></p>
+    </div>
     <div class="button">
-        <input type="submit" value="Inquire">
+        <input type="submit" id="submit" value="Inquire">
     </div> 
 </fieldset>  
 </form>
 </section>
+
+   
+
+<section id="partners">
+    <ul id="partner">
+        <!-- Partner images will be appended here -->
+        <script>
+            generatePartnerList();
+        </script>
+    </ul>
+</section>
 <!--Footer section-->
 
     <footer>
+
         <div id="nondisclaimer"></div>
         <div class="copy">&copy; 2020 GreatCliffs.com</div>
         <div class="social">
@@ -114,6 +134,7 @@
             <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
         </div>
     </footer>
+   
 </body>
 
 
