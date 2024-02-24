@@ -9,6 +9,9 @@
     <script src="js/digclock.js"></script>
     <!--Partners-->
     <script src="js/site_scripts.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
 
 
 
@@ -29,18 +32,36 @@
           
               
             
-        
+                
 <!--Begining Navigation-->
    
-<nav class="main-menu">
-    <ul>
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="Cliffs.html">Cliffs</a></li>
-        <li><a href="activities.html">Activities</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+<nav class="navbar navbar-expand-lg navbar-dark row">
+    <div class="container">
+    <!-- Navbar Brand/Logo -->
+    <button class="navbar-toggle d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+    </button>
+    <!--Navbar Links-->
+    <div clss="collapse navbar-collapse" id="navbarNav">
+ <ul class="navbar-nav ml-auto">
+     <li class="nav-item col-lg-3">
+         <a class="nav-link" aria-current="page" href="#">Home</a>
+     </li>
+     <li class="nav-item col-lg-3">
+         <a class="nav-link" href="#">Cliffs</a>
+     </li>
+     <li class="nav-item col-lg-3">
+         <a class="nav-link" href="#">Activities</a>
+     </li>
+     <li class="nav-item col-lg-3">
+         <a class="nav-link active" href="#">Contact</a>
+     </li>
+ </ul>
+</div>
+</div>
 </nav>
 <!--End Navigation-->
+            </header>
     </div>
 </div>
 </header>
@@ -49,18 +70,33 @@
         <span id="clock"></span>
         <span id="timezone">Time Zone: <span id="timezone-value"></span></span>
     </section>
-<!--Main Begin-->
-    <main>
-       
+    <div class="container">
+        <h1>Introducing California's Greatest Cliffs</h1>
+        <div class="row">
+          <div class="col-sm-6">
+            <h2>What is so unique about California cliffs?</h2>
+            <p>
+              California cliffs are one of a kind in the United States where
+              no cliffs are as magnificent and beautiful as them. And
+              California is the only state that has cliffs that front all
+              possible environments: sea, river, mountains, and canyons. There
+              are four such individual unique cliffs: West Cliff, North Cliff,
+              East Cliff, and South Cliff. All offer fantastic overlooking
+              views, recreational areas, camping sites, wildlife watch spots,
+              and overnight cabins.
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <h2>Where are these cliffs?</h2>
+            <p>
+              Located within a 100-mile radius from Irvine, California, they
+              can be reached by roads easily. The closest cliff to Irvine is
+              West Cliff, which is the most popular and most visited.
+            </p>
+          </div>
+        </div>
+      </div>
 
-        <h2>Introducing California's Greatest Cliff's </h2>
-          <h3>What is so unique about California cliffs?</h3>
-          <p>California cliffs are one of a kind in the United States where no cliffs are as magnificent and beautiful as them. And California is the only state that have cliffs that fronts all possible environments: sea, river, mountains and canyons. There are four such individual unique cliffs: West Cliff, North Cliff, East Cliff and South Cliff. All offer fantastic overlooking views, recreational areas, camping sites, wildlife watch spots and overnight cabins.
-
-        </p>
-          <h3>Where are these cliffs?</h3>
-          <p>Located within 100 miles radius from Irvine , California, they can be reached by roads easily. The closets cliff to Irivine is West Cliff, which is the most popular and most visited.</p>
-        
         
             <section id="partners">
             
@@ -95,27 +131,35 @@
 <!--main End-->
 
 
-    <footer>
-        <div id="nondisclaimer"></div>
-        <div class="copy">&copy; 2020 GreatCliffs.com</div>
-        <div class="social">
-            <a href="#" class="fa fa-facebook">
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-twitter"></a>   
+<footer class="container-fluid">
+    <div class="row">
+        <div id="nondisclaimer">
+            <!-- Content for nondisclaimer -->
         </div>
-
-        <div id="disclaimer">
-            <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+        <div class="col-md-6">
+            <div class="copy">&copy; 2020 GreatCliffs.com</div>
+            <div class="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>   
+            </div>
         </div>
-       
-    
-    </footer>
+        <div class="col-md-12">
+            <div id="disclaimer">
+                <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+            </div>
+        </div>
+    </div>
+</footer>
     
     
     <script>
         generatePartnerList();
  </script>
-     
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
    
 </body>
 </html>

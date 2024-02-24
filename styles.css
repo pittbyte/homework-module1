@@ -3,11 +3,18 @@ header {
     width: 100%;
     min-height: 400px;
     padding-top: 3em;
-    background: no-repeat lightgrey url(image/cliff_ocean.jpg);
+  /*  background: no-repeat lightgrey url(image/cliff_ocean.jpg); */
     background-size: 1500px;
     
 }
-
+.activities-header {
+    width: 100%;
+    min-height: 400px;
+    padding-top: 3em;
+    
+    background-size: 1500px;
+    
+}
 #Home header {
     background: no-repeat lightgray url(image/cliff_ocean.jpg);
     background-size: 1500px;
@@ -110,7 +117,8 @@ h1 {
 #contact-form {
     background-color: #fff; 
     padding: 20px;
-    max-width: 800px; 
+    width: 700px;
+    height: 100px; 
     margin: 0 auto; 
    
     
@@ -202,9 +210,13 @@ h1 {
     left: 50%;
     transform: translateX(-50%);
 }
+.navbar-nav .nav-item .nav-link {
+    margin-right: 5px; /* Adjust the value as needed */
+}
 /*Main Header*/
 .main-header  {
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: rgb(21, 20, 20);
+    opacity:55%;
     width: 700px;
     margin: 2em auto 0 auto;
     min-height: 100px;
@@ -221,7 +233,22 @@ h1 {
     margin-left: 227px;
     font-weight: 400px;
 }
+.navbar-nav  {
+    margin-left: 227px;
+    font-weight: 400px;
+}
 .main-menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    float: left;
+    padding-left: 25px;
+    padding-right:25px;
+    border-left: 1px solid rgba(202, 204, 202, 0.6);
+    line-height: 100px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.navbar-nav ul li {
     list-style-type: none;
     display: inline-block;
     float: left;
@@ -237,15 +264,33 @@ h1 {
     color: #888;
 
 }
+.navbar ul li a {
+    text-decoration: none;
+    color: #888;
+
+}
 .main-menu ul li a:hover {
+    color: #9ed034
+}
+.navbar ul li a:hover {
     color: #9ed034
 }
 .main-menu ul li.active {
     background: #9ed034;
     border:none;
 }
+.navbar ul li.active {
+    background: #9ed034;
+    border:none;
+}
 .main-menu ul li.active a {
-    color: #fff;
+    color: #9ed034;
+}
+.navbar ul li.active a  {
+    color: #9ed034;
+}
+.nav-item .nav-link.active {
+    background-color:#9ed034;
 }
 /*Main*/
 main h2 {
@@ -279,7 +324,20 @@ section #partner .partner img {
     height: 90px;
 }
 /*Footer*/
+/* Ensure the form container takes up at least the height of the viewport */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 100px); /* Adjust 100px to match the height of your footer */
+}
+
+/* Add margin-bottom to create space between the form and the footer */
+.spacer {
+    margin-bottom: 100px; /* Adjust to match the height of your footer */
+}
+
 footer {
+    position: fixed;
     width: 100%;
     height: 85px;
     padding-bottom: 1em;
@@ -372,7 +430,13 @@ table {
     background-color: #bde1ff; /* Add background color to header cells */
     padding: 10px;
   }
-  
+  .activities-table caption {
+    caption-side: top; /* Display the caption above the table */
+    font-weight: bold;
+    text-align: center; /* Center the caption text */
+    padding: 10px; /* Add padding for better appearance */
+    padding-bottom: 20px;
+  }
  
 tbody {
     background: #eeffe6;
@@ -477,4 +541,32 @@ p {
 }
 .highlight {
     background-color: yellow;
+}
+/*display box*/
+#activites main #displaySelected {
+    visibility: hidden;
+    margin: 0 auto;
+    width: 600px;
+    border: 2px solid #9ed034;
+    padding: 0.75em;
+
+}
+#activities main #displaySelected #result, #activities main #displaySelected #sendinfo {
+    display: inline-block;
+    margin: 0;
+}
+#activities main #result{
+    min-height: 50px;
+    width: 300px;
+    padding: 0;
+}
+#activities main #displaySelected #sendinfo input[type="email"] {
+    width: 200px;
+}
+.green-background {
+    background-color: #9ed034;
+}
+.ledgend {
+    color:#3b5998;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

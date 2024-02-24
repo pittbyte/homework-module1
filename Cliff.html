@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
 
 
 </head>
@@ -13,104 +16,145 @@
     <div id="container"></div> 
    
     <header> 
-        
-<img src="Image/forest_cliff.jpg" alt="Cliff View with rocks" width="1280" height="564">
+         <!-- Header Image -->
+         <div class="container">
+       <img src="Image/forest_cliff.jpg" alt="Cliff View with rocks" width="1280" height="564">
+         </div>
+
 <div class="nav-container">
     <div class="main-header">
         <div class="logo">
             <img src="Image\logo.png" alt="Great Cliff's Logo" width="125" height="100">
         </div>
-          
-        
-
-        
-            
-        
+                
 <!--Begining Navigation-->
    
-   <nav class="main-menu">
-    <ul>
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="Cliffs.html">Cliffs</a></li>
-        <li><a href="activities.html">Activities</a></li>
-        <li><a href="Contact.html">Contact</a></li>
+   <nav class="navbar navbar-expand-lg navbar-dark row">
+       <div class="container">
+       <!-- Navbar Brand/Logo -->
+       <button class="navbar-toggle d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+       </button>
+       <!--Navbar Links-->
+       <div clss="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item col-lg-3">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item col-lg-3">
+            <a class="nav-link active" href="#">Cliffs</a>
+        </li>
+        <li class="nav-item col-lg-3">
+            <a class="nav-link" href="#">Activities</a>
+        </li>
+        <li class="nav-item col-lg-3">
+            <a class="nav-link" href="#">Contact</a>
+        </li>
     </ul>
+</div>
+</div>
 </nav>
 <!--End Navigation-->
-    </header>
+ 
+</header>
+
 <!--Main Begin-->
-    <main>
-        
+    <main class="container">
+        <div class="row">
+            <div class="col-12 text-center">
         <h2>California's Greatest Cliffs</h2>
             <p class="special">The greatest cliffs are these four cliffs located in southern California. Each of these cliffs have their own uniqueness and beauty: West Cliff, North Cliff, East Cliff and South Cliff are the pride of California. Each cliff has many amenities to offer visitors such as recreational areas, camping sites, wildlife watch spots and overnight cabins.</p>
            
             <p>No matter which direction you head from Irvine, California, the sites are easily reached within a 100 mile radius. West Cliff is the most popular among Westcliff University campus students because of its close proximity.</p>
             <ul id="album">
             
-            <section id="image-grid">
-                
-                <div class="image" data-label="West Cliff">
-                    <img src="Image/cliff-west-sea.jpg" alt="Overhead Sea View">
-                </div>
-            
-                <div class="image1" data-label="North Cliff">
-                    <img src="Image/cliff-north-mountain.jpg" alt="Edge of the Cliff">
-                </div>
-            
-                <div class="image2" data-label="East Cliff">
-                    <img src="Image/cliff-east-river.jpg" alt="Cliff Water View">
-                </div>
-            
-                <div class="image3" data-label="South Cliff">
-                    <img src="Image/cliff-south-canyon.jpg" alt="Trees and Cliffs">
-                </div>
-            </section>
+                <section id="image-grid" class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="image" data-label="West Cliff">
+                                <img src="Image/cliff-west-sea.jpg" alt="Overhead Sea View" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image" data-label="North Cliff">
+                                <img src="Image/cliff-north-mountain.jpg" alt="Edge of the Cliff" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image" data-label="East Cliff">
+                                <img src="Image/cliff-east-river.jpg" alt="Cliff Water View" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image" data-label="South Cliff">
+                                <img src="Image/cliff-south-canyon.jpg" alt="Trees and Cliffs" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
         
 
 <!--Partner Container-->
-          <div class="container">
-          <section>
-            <ul id="partner">
+<div class="container">
+    <section>
+        <div class="row">
+            <div class="col-md-4">
+                <ul id="partner">
                     <li class="partner">
-                        <img src="Image/partners/partner-bustour.png" alt="Partner Bus Tour"></li>
+                        <img src="Image/partners/partner-bustour.png" alt="Partner Bus Tour">
+                    </li>
                     <li class="partner">
-                        <img src="Image/partners/partner-cabinrental.png" alt="Partner Cabin Rental"></li>
+                        <img src="Image/partners/partner-cabinrental.png" alt="Partner Cabin Rental">
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul id="partner">
                     <li class="partner">
-                        <img src="Image/partners/partner-campingadv.png" alt="Partner Camping Adventure"></li>
+                        <img src="Image/partners/partner-campingadv.png" alt="Partner Camping Adventure">
+                    </li>
                     <li class="partner">
-                        <img src="Image/partners/partner-collegetours.png" alt="Partner College Tours"></li>
+                        <img src="Image/partners/partner-collegetours.png" alt="Partner College Tours">
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul id="partner">
                     <li class="partner">
-                        <img src="Image/partners/partner-rentalbike.png" alt="Partner Rental Bike"></li>
+                        <img src="Image/partners/partner-rentalbike.png" alt="Partner Rental Bike">
+                    </li>
                     <li class="partner">
-                        <img src="Image/partners/partner-tourgroup.png" alt="Partner Tour Group"></li>
-            </ul>
-            
-            
-            
-        
-
-
-          </section>
-          </div>
-    
-    
+                        <img src="Image/partners/partner-tourgroup.png" alt="Partner Tour Group">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
     
     </main>
 <!--main End-->
-    <footer>
-        <div id="nondisclaimer"></div>
-        <div class="copy">&copy; 2020 GreatCliffs.com</div>
-        <div class="social">
-            <a href="#" class="fa fa-facebook">
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-twitter"></a>   
+<footer class="container-fluid">
+    <div class="row">
+        <div id="nondisclaimer">
+            <!-- Content for nondisclaimer -->
         </div>
-
-        <div id="disclaimer">
-            <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+        <div class="col-md-6">
+            <div class="copy">&copy; 2020 GreatCliffs.com</div>
+            <div class="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>   
+            </div>
         </div>
-    </footer>
+        <div class="col-md-12">
+            <div id="disclaimer">
+                <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+            </div>
+        </div>
+    </div>
+</footer>
     <!-- Dynamic image generation script -->
     <script>
         var images = [
@@ -136,6 +180,9 @@
     
         document.getElementById("image-grid").innerHTML = imageList.join(" ");
     </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 
